@@ -1,0 +1,34 @@
+Installing Linux on top of Windows
+
+1
+
+Open the Windows Features dialog. To do so, search for "Turn Windows features on or off" from the taskbar then select it.
+
+2
+
+Find "Windows Subsystem for Linux" from the features list. Make sure that box is checked.
+
+3
+
+Click OK. This will apply the feature changes to your machine.
+
+4
+
+Restart your machine when prompted. To enable the new hypervisor, your computer will need to be restarted. Windows also has to change a few settings to make WSL work on your machine.
+
+5
+
+Update WSL. Before use, you should update WSL to the latest version. To do so, run wsl --update in an elevated PowerShell or Command Prompt window.To start an elevated terminal, search for "Command Prompt" or "PowerShell" or "Windows Terminal", click "Run as administrator", and accept the elevation prompt. Windows Terminal will display a security shield after elevation is successful
+
+6
+
+Shut down WSL. Before the updated WSL can run, you have to terminate the process. This can be done with the command wsl --shutdown. Once WSL is shut down, you can start your Linux distribution and get all the latest features.
+
+7
+
+Install a Linux distribution. You can install the default (Ubuntu) quickly by running the command wsl --install. To install a different Linux distribution, run the command wsl --install <distribution>.You can also visit the Microsoft Store to select a distribution of your pick.
+
+8
+
+Create an account on that distro. The account will be only for that one particular distro. If you install a different distro, it will require its own credentials. Type a username and set a password when prompted. After, you are all set to use that particular distribution.
+
